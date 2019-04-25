@@ -1,3 +1,1 @@
-Hello World
-
-<?=$data['name']?>
+INDEX

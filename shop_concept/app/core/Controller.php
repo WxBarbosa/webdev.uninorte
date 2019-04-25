@@ -13,4 +13,9 @@ class Controller{
     {
         require_once '../app/views/'. $view .'.php';
     }
+
+    public function dao($dao){
+        require_once '../app/dao/'. $dao .'.php';
+        return new $dao();
+    }
 }

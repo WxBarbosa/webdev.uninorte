@@ -2,7 +2,7 @@
 
 class App{
 
-    protected $controller = 'home'; // CONTROLLER
+    protected $controller = 'homeController'; // CONTROLLER
 
     protected $method = 'index'; // METODO/ACTION
 
