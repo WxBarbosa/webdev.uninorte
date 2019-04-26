@@ -1,17 +1,15 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" type="image/png" href="img/concept.png"/>
+    <link rel="shortcut icon" type="image/png" href="../img/concept.png"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login - Conceito | Moda Feminina Online </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/popper.min.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/popper.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
     
@@ -20,7 +18,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup, #navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand text-secondary" href="index.html"><img src="img/concept.png" width="30" class="navbar-brand">Concept</a>
+    <a class="navbar-brand text-secondary" href="../homeController/index"><img src="../img/concept.png" width="30" class="navbar-brand">Concept</a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mr-auto">
             <a class="nav-item nav-link text-secondary" href="#">Início <span class="sr-only">(current)</span></a>
@@ -39,7 +37,7 @@
         </div>
         <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link text-secondary" href="#">R$0,00 Carrinho</a>
-            <a class="nav-item nav-link text-secondary" href="login.html"><img src="img/profile.png" class="nav-item profile-image" width="30">  Entre ou cadastre-se</a>
+            <a class="nav-item nav-link text-secondary" href="../customerController/index"><img src="../img/profile.png" class="nav-item profile-image" width="30">  Entre ou cadastre-se</a>
         </div>
     </div>
 </nav>

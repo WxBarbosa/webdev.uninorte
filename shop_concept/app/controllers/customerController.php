@@ -4,26 +4,27 @@ class CustomerController extends Controller
 {
 
     public function index(){
-        $this->view('customer/register');
+        $this->view('customer/index');
     }
 
     public function register(){
-        //if(isset($_POST['name']) && isset($_POST['sexy']) && isset($_POST['cpf']) && isset($_POST['password']) && isset($_POST['email']))
-        //{
+        $result ='';
+        if(isset($_POST['name']) && isset($_POST['sexy']) && isset($_POST['cpf']) && isset($_POST['password']) && isset($_POST['email']))
+        {
             $customer = $this->model('CustomerModel');
             $customerDAO = $this->dao('CustomerDAO');
             
-            $customer->name = 'wyll';//$_POST['name'];
-            $customer->sexy = 1; //$_POST['sexo'];
-            $customer->cpf = '32'; //$_POST['cpf'];
-            $customer->password = 'teste'; //$_POST['senha'];            
-            $customer->email = 'teste'; //$_POST['email'];
+            $customer->name = $_POST['name'];
+            $customer->sexy = $_POST['sexy'];
+            $customer->cpf = $_POST['cpf'];
+            $customer->password = $_POST['password'];            
+            $customer->email = $_POST['email'];
 
-           $customerDAO->Inserir($customer);
-        //}else{
-        //    $result = [ 'data' => 'error'];
-        //    echo json_encode($result);
-        //}
+            $result = ['data' => $customerDAO->Inserir($customer)];
+        }else{
+            $result = [ 'data' => 'Preencha todos os campos!'];
+        }
+
+        echo json_encode($result);
     }
-
 }

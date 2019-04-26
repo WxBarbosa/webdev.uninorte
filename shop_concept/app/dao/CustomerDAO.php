@@ -33,12 +33,11 @@ class CustomerDAO
             $p_sql->bindValue(":cpf", $customer->cpf);
             $p_sql->bindValue(":senha", $customer->password);
             $p_sql->bindValue(":email", $customer->email);
-  
-  
-            return $p_sql->execute();
+            $p_sql->execute();
+            return "Sucesso";
+
         } catch (Exception $e) {
-            print "Ocorreu um erro ao tentar executar esta ação, foi gerado um LOG do mesmo, tente novamente mais tarde.";
-            echo ("Erro: Código: " . $e->getCode() . " Mensagem: " . $e->getMessage());
+            return "Ocorreu um erro";
         }
     }
 
