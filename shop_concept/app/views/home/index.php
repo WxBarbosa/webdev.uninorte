@@ -1,3 +1,9 @@
-Hello World
+<?php require('../app/views/defaults/header.php'); ?>
 
-<?=$data['name']?>
+<div class="container">
+    <div class="row">
+        Home/Index
+    </div>
+</div>
+
+<?php require('../app/views/defaults/footer.php'); ?>

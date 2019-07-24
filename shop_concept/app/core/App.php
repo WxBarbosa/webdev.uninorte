@@ -2,7 +2,7 @@
 
 class App{
 
-    protected $controller = 'home'; // CONTROLLER
+    protected $controller = 'homeController'; // CONTROLLER
 
     protected $method = 'index'; // METODO/ACTION
 
@@ -38,10 +38,17 @@ class App{
     }
 
     // Função para quebrar URL em vetor $url = [controller/método/param1/param2...]
-    public function parseUrl(){
+    private function parseUrl(){
         if(isset($_GET['url'])){
             return $url = explode('/', filter_var(rtrim($_GET['url'],'/'), FILTER_SANITIZE_URL));
         }
     }
 
+    public function Redirect($url, $permanent = false)
+    {
+        if (headers_sent() === false)
+        {
+            header('Location: ' . $url, true, ($permanent === true) ? 301 : 302);
+        }
+    }
 }

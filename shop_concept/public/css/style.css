@@ -1,0 +1,200 @@
+/*barra de navegação*/
+@media (max-width: 1000px) {
+  nav.navbar {  
+    background: #f8f9fa;
+  }
+}
+@media (min-width: 1000px) {
+  nav.navbar {
+    background: #212529;
+  }
+}
+.navbar-nav .dropdown-menu{
+  border: none;
+  background-color: #f8f9fa;
+}
+.profile-image{
+  border-radius: 50%;
+}
+
+/**/
+/*Slides*/
+
+/*Cor da seleção do mouse*/
+::selection {
+  background: #efcbff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #efcbff; /* Gecko Browsers */
+}
+/* Customizando/Overriding css do modal do Bootstrap 4. */
+.modal-header{
+  background-color: #d2ccf9;
+  color: white;
+  border-bottom: none;
+  border-radius: .9rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.modal-title {
+  font-variant-caps: small-caps;
+}
+.modal-backdrop {
+  background-color: #bdb8e2;
+}
+.modal-content {
+  border: none;
+  border-radius: .9rem;
+  box-shadow: 0px 0px 8px #888888;
+
+}
+/*Fim*/
+/*animação do modal*/
+.bounce-top {
+	-webkit-animation: bounce-top 0.9s both;
+	        animation: bounce-top 0.9s both;
+}
+/*keyframes do bounce*/
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+/*Fim*/
+.texto{
+  text-shadow: 3px 3px 2px #333333;
+}
+.imagem{
+  width: 200px;
+}
+/**/
+
+/*FOOTER*/
+
+footer {
+  background: #212529;
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #bdb8e2;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
